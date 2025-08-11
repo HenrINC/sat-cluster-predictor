@@ -12,6 +12,6 @@ data:
     This namespace contains the satellite prediction CronJob.
     The CronJob runs daily at 5 AM and creates recording jobs
     for all predicted satellite passes.
-    
+
     The actual CronJob manifest is managed by ArgoCD from
     the sat-cluster-argo repository.
