@@ -1,0 +1,17 @@
+# Satellite Prediction CronJob
+# This will be managed by ArgoCD but defined here for reference
+# The actual CronJob is in the sat-cluster-argo repo
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: predictor-info
+  namespace: predictor
+data:
+  info: |
+    This namespace contains the satellite prediction CronJob.
+    The CronJob runs daily at 5 AM and creates recording jobs
+    for all predicted satellite passes.
+    
+    The actual CronJob manifest is managed by ArgoCD from
+    the sat-cluster-argo repository.
